@@ -3,292 +3,91 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IGI — Initiative for Generative Immunotherapy · UNC</title>
-<meta name="description" content="Initiative for Generative Immunotherapy (IGI) at UNC Lineberger: open tumor pMHC and TCR datasets, head-to-head cancer vaccine trials, and public IND/trial documentation.">
+<title>Initiative for Generative Immunotherapy (IGI) · UNC</title>
+<meta name="description" content="Initiative for Generative Immunotherapy at UNC Lineberger: open tumor pMHC and TCR datasets, head-to-head cancer vaccine trials, and public trial documentation.">
 <link rel="canonical" href="https://igi-unc.github.io/">
-<meta property="og:site_name" content="Initiative for Generative Immunotherapy">
-<meta property="og:title" content="Initiative for Generative Immunotherapy (IGI) · UNC">
-<meta property="og:description" content="Ground-truth tumor pMHC and TCR datasets, head-to-head clinical vaccine comparisons, and open regulatory playbooks at UNC Lineberger.">
+<meta property="og:title" content="Initiative for Generative Immunotherapy (IGI)">
+<meta property="og:description" content="Open tumor pMHC and TCR datasets, head-to-head cancer vaccine trials, and public clinical trial documentation at UNC Chapel Hill.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://igi-unc.github.io/">
-<meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2311161c'/%3E%3Cline x1='8' y1='24' x2='8' y2='8' stroke='%236cb6eb' stroke-width='2'/%3E%3Cline x1='24' y1='24' x2='24' y2='8' stroke='%236cb6eb' stroke-width='2'/%3E%3Cline x1='8' y1='16' x2='24' y2='16' stroke='%236cb6eb' stroke-width='1.5' stroke-dasharray='2 2'/%3E%3Ccircle cx='16' cy='16' r='3.5' fill='%23d95333'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23121619'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='monospace' font-weight='700' font-size='13' fill='%23e6edf3'%3EIGI%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
 
-<div class="sheet">
-  <header class="topbar">
-    <a class="brand" href="#main">
-      <svg viewBox="0 0 22 14" aria-hidden="true" focusable="false">
-        <line x1="2" y1="13" x2="2" y2="1" stroke="currentColor" stroke-width="1.6"/>
-        <line x1="20" y1="13" x2="20" y2="1" stroke="currentColor" stroke-width="1.6"/>
-        <line x1="2" y1="7" x2="20" y2="7" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 2"/>
-        <circle cx="11" cy="7" r="2.6" fill="var(--signal)"/>
-      </svg>
-      <span>IGI // UNC</span>
-    </a>
-    <nav aria-label="Primary">
-      <a href="#program">Program</a>
-      <a href="#data">Open Data</a>
-      <a href="#code">Code</a>
-      <a class="hide-sm" href="#people">People</a>
-      <a href="https://github.com/igi-unc">GitHub</a>
-    </nav>
+<main>
+  <header>
+    <h1>Initiative for Generative Immunotherapy</h1>
+    <p class="sub">UNC Lineberger Comprehensive Cancer Center, Chapel Hill, NC</p>
   </header>
 
-  <main id="main">
-    <section class="hero">
-      <p class="kicker">UNC LINEBERGER COMPREHENSIVE CANCER CENTER · CHAPEL HILL, NC</p>
-      <h1>Initiative for Generative Immunotherapy</h1>
-      <p class="lede">
-        Personalized cancer vaccines can fail for two different reasons: the predicted targets are not actually presented on the tumor, or the vaccine does not raise enough CD8<sup>+</sup> T cells against them. Past trials have tangled those questions together. IGI separates them—and releases everything we generate openly, except germline-identifying DNA from patients or tumors.
-      </p>
-      <p class="provenance">
-        Independent research unit at UNC Chapel Hill, launched in 2026 with support from the OpenAI Foundation (<a href="https://pirlblog.substack.com/p/openai-foundation-gave-us-40m-to">announcement</a>) alongside <a href="https://pirl.unc.edu/">PIRL</a>.
-      </p>
+  <p>
+    The Initiative for Generative Immunotherapy (IGI) is an independent research unit at UNC Chapel Hill, started in 2026 with support from the <a href="https://pirlblog.substack.com/p/openai-foundation-gave-us-40m-to">OpenAI Foundation</a> alongside the <a href="https://pirl.unc.edu/">Personalized Immunotherapy Research Lab (PIRL)</a>.
+  </p>
 
-      <figure class="schematic" aria-label="Two decoupled tracks: ground-truth tumor target discovery and head-to-head vaccine platform trials">
-        <div class="track">
-          <div class="track-head">
-            <span class="track-tag">TRACK A // TARGET TRUTH</span>
-            <svg class="glyph" viewBox="0 0 40 16" aria-hidden="true" focusable="false">
-              <line x1="2" y1="8" x2="11" y2="8" stroke="currentColor" stroke-width="1.2"/>
-              <path d="M14 3 Q10 8 14 13" fill="none" stroke="currentColor" stroke-width="1.2"/>
-              <circle cx="17" cy="8" r="2" fill="var(--signal)"/>
-              <line x1="23" y1="6" x2="36" y2="6" stroke="currentColor" stroke-width="1.2"/>
-              <line x1="23" y1="10" x2="36" y2="10" stroke="currentColor" stroke-width="1.2"/>
-              <line x1="30" y1="6" x2="30" y2="10" stroke="currentColor" stroke-width="1.1"/>
-            </svg>
-          </div>
-          <ol class="flow">
-            <li>
-              <span class="step-label">01 · SPECIMENS</span>
-              <strong>Diverse tumors + TILs</strong>
-              <span>Viable tissue via UNC SLiCE core &amp; clinical biobanks</span>
-            </li>
-            <li>
-              <span class="step-label">02 · ASSAYS</span>
-              <strong>pMHC + TCR profiling</strong>
-              <span>Long-read WGS &amp; scRNA, MS immunopeptidomics, pMHC:TCR screens</span>
-            </li>
-            <li class="outcome">
-              <span class="step-label">03 · OUTCOME</span>
-              <strong>Open target &amp; TCR atlas</strong>
-              <span>Validated tumor pMHCs + deorphanized tumor-specific TCRs</span>
-            </li>
-          </ol>
-        </div>
+  <p>We focus on two things:</p>
 
-        <div class="track">
-          <div class="track-head">
-            <span class="track-tag">TRACK B // VACCINE POTENCY</span>
-            <svg class="glyph" viewBox="0 0 40 16" aria-hidden="true" focusable="false">
-              <line x1="4" y1="14" x2="4" y2="9" stroke="currentColor" stroke-width="2"/>
-              <line x1="12" y1="14" x2="12" y2="4" stroke="var(--signal)" stroke-width="2"/>
-              <line x1="20" y1="14" x2="20" y2="6" stroke="currentColor" stroke-width="2"/>
-              <line x1="28" y1="14" x2="28" y2="11" stroke="currentColor" stroke-width="2" stroke-dasharray="1.5 1.5"/>
-              <line x1="1" y1="14" x2="34" y2="14" stroke="currentColor" stroke-width="1"/>
-            </svg>
-          </div>
-          <ol class="flow">
-            <li>
-              <span class="step-label">01 · FIXED INPUT</span>
-              <strong>Same antigen selector</strong>
-              <span>Target selection held constant across every trial arm</span>
-            </li>
-            <li>
-              <span class="step-label">02 · HEAD-TO-HEAD ARMS</span>
-              <strong>Peptides + poly-ICLC vs. Moderna-style mRNA</strong>
-              <span>Starting two-arm comparison, adding further arms over time</span>
-            </li>
-            <li class="outcome">
-              <span class="step-label">03 · OUTCOME</span>
-              <strong>Direct <em>ex vivo</em> CD8<sup>+</sup> readout + open IND</strong>
-              <span>Clone tracking secondary; all protocols, IND/CMC &amp; SOPs public</span>
-            </li>
-          </ol>
-        </div>
-      </figure>
-    </section>
+  <ol class="goals">
+    <li>
+      <strong>Measuring what tumors actually present to T cells.</strong>
+      Most predicted neoantigens never reach the tumor surface. Across a broad set of cancer types, working closely with UNC’s Screening Live Cancer Explants (SLiCE) core and clinical biobanks, we pair long-read genome and single-cell RNA/TCR sequencing with mass-spectrometry immunopeptidomics (covering point mutations, indels, structural variants, fusions, and cancer-testis antigens) and high-throughput pMHC:TCR screening to deorphanize tumor-specific TCRs from TILs and tumor-associated T cells.
+    </li>
+    <li>
+      <strong>Comparing vaccine platforms head-to-head in the clinic.</strong>
+      Past vaccine trials change target selection and vaccine delivery at the same time, making it hard to tell why a vaccine worked or failed. Our clinical trial holds the antigen-selection pipeline fixed across arms, starting with synthetic long peptides + poly-ICLC as the default arm against Moderna-style mRNA-LNP and adding new arms over time. Arms are compared on direct <em>ex vivo</em> CD8<sup>+</sup> T-cell responses, with longitudinal TCR clone tracking as a secondary outcome.
+    </li>
+  </ol>
 
-    <section class="section" id="program">
-      <div class="sec-bar">
-        <span class="sec-num">01</span>
-        <h2>What we do</h2>
-        <span class="sec-line" aria-hidden="true"></span>
-      </div>
+  <p class="note">
+    As a smaller, longer-horizon effort, we also work on targeted lipid nanoparticles (tLNPs) to deliver discovered TCRs as <em>in vivo</em> TCR-Ts or, with dendritic-cell targeting, to deliver antigens as vaccines.
+  </p>
 
-      <div class="items">
-        <article class="item">
-          <div class="item-meta">01.A // DATA</div>
-          <div class="item-body">
-            <h3>Measure what tumors actually present—and which T cells recognize it</h3>
-            <p>
-              Most predicted neoantigens never appear at meaningful levels on the tumor surface. Across a broad set of cancer types—working closely with UNC’s Screening Live Cancer Explants (SLiCE) core for viable surgical tissue alongside clinical specimen collections—we pair long-read tumor/normal genome sequencing and single-cell full-length RNA/TCR sequencing with multi-tier mass-spectrometry immunopeptidomics across classical mutations, structural-variant reading frames, fusions, and cancer-testis antigens.
-            </p>
-            <p>
-              In parallel, we run high-throughput pMHC:TCR screening to deorphanize tumor-specific TCRs from tumor-infiltrating lymphocytes (TILs) and tumor-associated T cells, linking presented targets directly to functional T-cell recognition.
-            </p>
-          </div>
-        </article>
+  <h2>Open data &amp; open trial documents</h2>
 
-        <article class="item">
-          <div class="item-meta">01.B // TRIAL</div>
-          <div class="item-body">
-            <h3>Compare vaccine platforms head-to-head and publish the entire trial</h3>
-            <p>
-              Holding the antigen-selection pipeline constant lets a clinical trial isolate vaccine potency. We are starting with synthetic long peptides + poly-ICLC as the baseline arm against a Moderna-style mRNA-LNP vaccine, and adding more arms over time. Every arm is judged on the same primary yardstick: direct <em>ex vivo</em> CD8<sup>+</sup> T-cell responses, with longitudinal TCR clone tracking in blood as a secondary outcome.
-            </p>
-            <p>
-              Just as important as the immunogenicity readout is making the clinical trial process legible and reusable: we are publishing our clinical protocols, IND and CMC packages, regulatory correspondence, and SOPs openly on GitHub so other groups can launch and iterate on AI-designed trials.
-            </p>
-          </div>
-        </article>
+  <p>
+    Everything we generate is public, except germline genetic information (DNA and germline-carrying reads from patient or tumor samples), which is deposited in controlled-access archives (dbGaP / SRA).
+  </p>
 
-        <aside class="item secondary">
-          <div class="item-meta">EXPLORATORY</div>
-          <div class="item-body">
-            <p>
-              <strong>Targeted RNA delivery.</strong> As a secondary effort alongside data generation and the platform trial, we are developing targeted lipid nanoparticles (tLNPs)—either to deliver discovered TCRs as <em>in vivo</em> TCR-Ts, or with dendritic-cell targeting to deliver antigens as vaccines.
-            </p>
-          </div>
-        </aside>
-      </div>
-    </section>
+  <ul>
+    <li><strong>Presented pMHCs:</strong> mass-spectrometry immunopeptidomics spectra and validated targets (PRIDE, IEDB, GitHub)</li>
+    <li><strong>TCRs &amp; T-cell assays:</strong> deorphanized pMHC:TCR pairs, TIL and blood TCR repertoires, and direct <em>ex vivo</em> CD8<sup>+</sup> readouts (VDJdb, AIRR, GitHub)</li>
+    <li><strong>Somatic targets &amp; expression:</strong> somatic variant calls, tumor-specific transcript/protein sequences, antigen predictions, and RNA expression matrices (GEO, GitHub)</li>
+    <li><strong>Clinical trial paperwork:</strong> protocols, IND and CMC packages, SOPs, and regulatory filings (GitHub)</li>
+  </ul>
 
-    <section class="section" id="data">
-      <div class="sec-bar">
-        <span class="sec-num">02</span>
-        <h2>Open data</h2>
-        <span class="sec-line" aria-hidden="true"></span>
-      </div>
+  <h2>Code</h2>
 
-      <p class="section-intro">
-        <strong>Open by default.</strong> Everything we generate—immunopeptidomics spectra, validated pMHCs, somatic target and isoform calls, gene-expression matrices, TCR repertoires, deorphanized pMHC:TCR pairs, immune readouts, and clinical trial filings—is released publicly without restriction. Only germline-identifying genetic information (DNA from patient or tumor samples) is held in controlled-access archives.
-      </p>
+  <p>
+    Repositories are at <a href="https://github.com/igi-unc">github.com/igi-unc</a>, alongside <a href="https://pirl.unc.edu/code/">PIRL</a> (<code>LENS</code>, <code>RAFT</code>, <code>mhcgnomes</code>) and <a href="https://www.openvax.org/">OpenVax</a> (<code>MHCflurry</code>, <code>Vaxrank</code>, <code>Isovar</code>, <code>Varcode</code>, <code>Topiary</code>):
+  </p>
 
-      <div class="table-wrap">
-        <table class="spec-table">
-          <thead>
-            <tr>
-              <th scope="col">Artifact</th>
-              <th scope="col">Contents</th>
-              <th scope="col">Access &amp; Archive</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>pMHC presentation</code></td>
-              <td>Quantitative MS immunopeptidomics spectra &amp; validated targets across diverse tumors</td>
-              <td><span class="access-open">OPEN</span> · PRIDE · IEDB · GitHub</td>
-            </tr>
-            <tr>
-              <td><code>TCRs &amp; T-cell readouts</code></td>
-              <td>Deorphanized TIL &amp; vaccine-elicited pMHC:TCR pairs, TCR repertoires, direct <em>ex vivo</em> CD8<sup>+</sup> assays</td>
-              <td><span class="access-open">OPEN</span> · VDJdb · AIRR · GitHub</td>
-            </tr>
-            <tr>
-              <td><code>Somatic targets &amp; RNA</code></td>
-              <td>Somatic variants, tumor-specific protein/isoform sequences, antigen predictions &amp; expression matrices</td>
-              <td><span class="access-open">OPEN</span> · GEO · GitHub</td>
-            </tr>
-            <tr>
-              <td><code>Trial paperwork</code></td>
-              <td>Clinical protocols, IND &amp; CMC packages, SOPs, and regulatory correspondence</td>
-              <td><span class="access-open">OPEN</span> · GitHub</td>
-            </tr>
-            <tr class="controlled-row">
-              <td><code>Patient &amp; tumor DNA</code></td>
-              <td>Germline genetic information and raw DNA/RNA reads carrying germline genotypes</td>
-              <td><span class="access-ctrl">CONTROLLED</span> · dbGaP · SRA</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+  <ul>
+    <li><a href="https://github.com/igi-unc/igi-syn-seq">igi-syn-seq</a>: synthetic 15-assay tumor/normal truth sets (<code>IGI-SYN-SEQ-01</code>, <code>IGI-SYN-SEQ-02</code>) for benchmarking antigen callers</li>
+    <li><a href="https://github.com/igi-unc/igi-lims">igi-lims</a>: chain-of-custody LIMS tracking specimen and tube lineage from collection through sequencing and immunopeptidomics</li>
+    <li><a href="https://github.com/igi-unc/igi-data-librarian">igi-data-librarian</a>: sequencing registry and automated <a href="https://github.com/pirl-unc/raft">RAFT</a> / Nextflow QC</li>
+  </ul>
 
-    <section class="section" id="code">
-      <div class="sec-bar">
-        <span class="sec-num">03</span>
-        <h2>Code &amp; benchmarks</h2>
-        <span class="sec-line" aria-hidden="true"></span>
-      </div>
+  <h2>People</h2>
 
-      <dl class="repo-list">
-        <div>
-          <dt><a href="https://github.com/igi-unc/igi-syn-seq">igi-unc/igi-syn-seq</a></dt>
-          <dd>Generator and truth specifications for <code>IGI-SYN-SEQ-01</code> and <code>IGI-SYN-SEQ-02</code>: synthetic 15-assay tumor/normal datasets (Illumina, PacBio HiFi/Kinnex, ONT, 10x GEX/TCR) for benchmarking antigen discovery across every variant class.</dd>
-        </div>
-        <div>
-          <dt><a href="https://github.com/igi-unc/igi-lims">igi-unc/igi-lims</a></dt>
-          <dd>Chain-of-custody specimen database tracking tube-to-tube provenance from tissue collection through cellular fractions, DNA/RNA extracts, peptide eluates, QC imports, and sequencing files.</dd>
-        </div>
-        <div>
-          <dt><a href="https://github.com/igi-unc/igi-data-librarian">igi-unc/igi-data-librarian</a></dt>
-          <dd>Sequencing registry and Slack automation for dataset accessioning, tube verification, and automated Nextflow / <a href="https://github.com/pirl-unc/raft">RAFT</a> quality-control runs.</dd>
-        </div>
-      </dl>
+  <ul class="people">
+    <li><a href="https://unclineberger.org/directory/alex-rubinsteyn/">Alex Rubinsteyn, PhD</a> · Computational Co-Director</li>
+    <li><a href="https://unclineberger.org/directory/benjamin-vincent/">Benjamin Vincent, MD</a> · Translational Co-Director</li>
+    <li><a href="https://unclineberger.org/directory/lisa-carey/">Lisa A. Carey, MD</a> · Clinical Co-Director</li>
+    <li><a href="https://unclineberger.org/directory/yara-abdou/">Yara Abdou, MD, MSCR</a> · Clinical Trial PI</li>
+    <li><a href="https://unclineberger.org/directory/jared-weiss/">Jared Weiss, MD</a> · Clinical Advisor</li>
+    <li><a href="https://pirl.unc.edu/people/">Jessica Alley, PhD</a> · Head of Experimental Research</li>
+  </ul>
 
-      <p class="companion">
-        Companion open-source stacks: <a href="https://pirl.unc.edu/code/">PIRL (@pirl-unc)</a> — <code>LENS</code>, <code>RAFT</code>, <code>mhcgnomes</code> · <a href="https://www.openvax.org/">OpenVax (@openvax)</a> — <code>MHCflurry</code>, <code>Vaxrank</code>, <code>Isovar</code>, <code>Varcode</code>, <code>Topiary</code>.
-      </p>
-    </section>
-
-    <section class="section" id="people">
-      <div class="sec-bar">
-        <span class="sec-num">04</span>
-        <h2>People</h2>
-        <span class="sec-line" aria-hidden="true"></span>
-      </div>
-
-      <ul class="roster">
-        <li>
-          <strong><a href="https://unclineberger.org/directory/alex-rubinsteyn/">Alex Rubinsteyn, PhD</a></strong>
-          <span>Computational Co-Director · Genetics &amp; Computational Medicine</span>
-        </li>
-        <li>
-          <strong><a href="https://unclineberger.org/directory/benjamin-vincent/">Benjamin Vincent, MD</a></strong>
-          <span>Translational Co-Director · Medicine (Hematology/Oncology)</span>
-        </li>
-        <li>
-          <strong><a href="https://unclineberger.org/directory/lisa-carey/">Lisa A. Carey, MD</a></strong>
-          <span>Clinical Co-Director · Breast Oncology &amp; Clinical Sciences</span>
-        </li>
-        <li>
-          <strong><a href="https://unclineberger.org/directory/yara-abdou/">Yara Abdou, MD, MSCR</a></strong>
-          <span>Clinical Trial PI · Breast Oncology</span>
-        </li>
-        <li>
-          <strong><a href="https://unclineberger.org/directory/jared-weiss/">Jared Weiss, MD</a></strong>
-          <span>Clinical Advisor · Thoracic Oncology</span>
-        </li>
-        <li>
-          <strong><a href="https://pirl.unc.edu/people/">Jessica Alley, PhD</a></strong>
-          <span>Head of Experimental Research · Formulation &amp; Immunopeptidomics</span>
-        </li>
-      </ul>
-
-      <p class="companion">
-        Built in close collaboration with <a href="https://pirl.unc.edu/people/">PIRL</a>, the UNC SLiCE Core, Genetics, Interventional Pulmonology, and the UNC Advanced Cellular Therapeutics GMP Facility. Lab notes and updates appear on the <a href="https://pirlblog.substack.com/">PIRL Blog</a>.
-      </p>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div>IGI // INITIATIVE FOR GENERATIVE IMMUNOTHERAPY · UNC CHAPEL HILL</div>
-    <div class="footer-links">
-      <a href="https://github.com/igi-unc">GitHub</a>
-      <a href="https://pirl.unc.edu/">PIRL</a>
-      <a href="https://pirlblog.substack.com/">Substack</a>
-      <a href="https://pirl.unc.edu/contact/">Contact</a>
-    </div>
+  <footer>
+    <a href="https://github.com/igi-unc">GitHub</a> ·
+    <a href="https://pirl.unc.edu/">PIRL</a> ·
+    <a href="https://pirlblog.substack.com/">Blog</a> ·
+    <a href="https://pirl.unc.edu/contact/">Contact</a>
   </footer>
-</div>
+</main>
 
 </body>
 </html>
