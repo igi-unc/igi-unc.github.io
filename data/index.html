@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Open Data · IGI at UNC</title>
-<meta name="description" content="Open tumor immunopeptidomics, somatic variant/isoform data, pMHC:TCR specificities, and public trial records from IGI at UNC.">
+<meta name="description" content="Open tumor immunopeptidomics, somatic variant/isoform data, pMHC:TCR specificities, and public archives from IGI at UNC.">
 <link rel="canonical" href="https://igi-unc.github.io/data/">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +42,6 @@
       <a href="/trial/">Trial</a>
       <a href="/code/">Code</a>
       <a href="/people/">People</a>
-      <a href="/projects/">Other Projects</a>
       <a class="ext-first" href="https://pirlblog.substack.com/">Blog</a>
       <a href="https://github.com/igi-unc">GitHub</a>
       <a href="https://pirl.unc.edu/">PIRL</a>
@@ -57,26 +56,29 @@
     </header>
 
     <p>
-      Everything IGI generates is released publicly without restriction, with one exception: germline genetic information (DNA and germline-carrying sequencing reads from patient normal or tumor samples), which is deposited in controlled-access archives (dbGaP and SRA) to protect patient privacy.
+      Computational pipelines nominate many candidate tumor antigens from sequencing reads, but only a small minority are presented on tumor MHC molecules at levels T cells can recognize. IGI is generating an open reference dataset that pairs deep tumor sequencing with direct measurements of peptide-MHC presentation and T-cell recognition across diverse solid, hematologic, and rare fusion-driven cancers.
     </p>
 
-    <h2>Tumor &amp; T-cell profiling</h2>
-
-    <p>
-      Most predicted neoantigens never appear at meaningful abundance on tumor cells. We profile specimens across a wide range of solid, hematologic, and rare fusion-driven cancers drawn from several repositories and collection protocols: UNC’s <a href="https://slice.unc.edu/">Screening Live Cancer Explants (SLiCE) Core</a> for viable surgical tumor tissue, the <a href="https://unclineberger.org/tissue-procurement/">UNC Lineberger Tissue Procurement Facility</a> (solid and hematologic biorepositories) and institutional bone-marrow protocols, the <a href="https://clinicaltrials.gov/study/NCT05620329">UNC Pleural Fluid Registry</a>, and the <a href="https://rarecancer.org/">Rare Cancer Research Foundation</a>.
-    </p>
-
-    <p>
-      To avoid inheriting any single predictor’s blind spots, candidate tumor antigens for experimental validation are sourced from the union of <a href="https://github.com/pirl-unc/nexus">Nexus</a>/<a href="https://github.com/pirl-unc/exacto">Exacto</a>, <a href="https://uselens.io/">LENS</a>, <a href="https://openvax.org/">OpenVax 2</a>, and <a href="https://github.com/griffithlab/ImmunoNX_protocol">ImmunoNX</a>. Each specimen cohort combines:
-    </p>
+    <h2>Specimens &amp; candidate sourcing</h2>
 
     <ul>
-      <li><strong>Long-read DNA &amp; single-cell RNA/TCR sequencing:</strong> tumor/normal whole-genome sequencing and full-length single-cell transcriptomes + paired αβ TCRs spanning point mutations, indels, structural variants, fusions, splice isoforms, and cancer-testis antigens.</li>
-      <li><strong>Mass-spectrometry immunopeptidomics:</strong> targeted heavy-isotope standards, inclusion-list DDA, and personalized-proteome DIA to measure which candidate peptide-MHC complexes are actually presented on tumor cells.</li>
+      <li><strong>Biobanks &amp; tissue protocols:</strong> viable surgical tumor tissue from UNC’s <a href="https://slice.unc.edu/">Screening Live Cancer Explants (SLiCE) Core</a>, solid and hematologic repositories in the <a href="https://unclineberger.org/tissue-procurement/">UNC Lineberger Tissue Procurement Facility</a> alongside institutional bone-marrow protocols, malignant effusions and matched blood from the <a href="https://clinicaltrials.gov/study/NCT05620329">UNC Pleural Fluid Registry</a>, and surgical specimens from rare cancers via the <a href="https://rarecancer.org/">Rare Cancer Research Foundation</a>.</li>
+      <li><strong>Candidate antigen pool:</strong> rather than testing a single algorithm’s top picks, we draw candidate targets from the union of <a href="https://github.com/pirl-unc/nexus">Nexus</a>/<a href="https://github.com/pirl-unc/exacto">Exacto</a>, <a href="https://uselens.io/">LENS</a>, <a href="https://openvax.org/">OpenVax 2</a>, and <a href="https://github.com/griffithlab/ImmunoNX_protocol">ImmunoNX</a> (see <a href="/code/">Code</a>).</li>
+    </ul>
+
+    <h2>Measurements</h2>
+
+    <ul>
+      <li><strong>Long-read genome &amp; single-cell RNA/TCR sequencing:</strong> tumor/normal whole-genome sequencing and full-length single-cell transcriptomes + paired αβ TCRs spanning point mutations, indels, structural variants, fusions, splice isoforms, and cancer-testis antigens.</li>
+      <li><strong>Mass-spectrometry immunopeptidomics:</strong> targeted heavy-isotope standards, inclusion-list DDA, and personalized-proteome DIA to quantify which candidate pMHCs appear on the tumor surface.</li>
       <li><strong>High-throughput pMHC:TCR screening:</strong> functional deorphanization of tumor-specific TCRs from tumor-infiltrating lymphocytes (TILs) and tumor-associated T cells.</li>
     </ul>
 
-    <h2>Data release policy</h2>
+    <h2>Release policy &amp; archives</h2>
+
+    <p>
+      Everything we generate is released publicly without restriction, with one exception: germline genetic information (DNA and germline-carrying sequencing reads from patient normal or tumor samples), which goes to controlled-access archives to protect patient privacy.
+    </p>
 
     <div class="table-wrap">
       <table>

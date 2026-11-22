@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Code · IGI at UNC</title>
-<meta name="description" content="Open-source software for antigen selection, synthetic multi-assay benchmarks, and specimen LIMS across IGI, PIRL, and OpenVax.">
+<meta name="description" content="Open-source software for antigen discovery, synthetic multi-assay benchmarks, and specimen LIMS across IGI, PIRL, and OpenVax.">
 <link rel="canonical" href="https://igi-unc.github.io/code/">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +42,6 @@
       <a href="/trial/">Trial</a>
       <a href="/code/" aria-current="page">Code</a>
       <a href="/people/">People</a>
-      <a href="/projects/">Other Projects</a>
       <a class="ext-first" href="https://pirlblog.substack.com/">Blog</a>
       <a href="https://github.com/igi-unc">GitHub</a>
       <a href="https://pirl.unc.edu/">PIRL</a>
@@ -53,21 +52,12 @@
   <main>
     <header class="pagehead">
       <h1>Code</h1>
-      <p class="sub">Antigen selection, synthetic benchmarks, and lab infrastructure</p>
+      <p class="sub">IGI infrastructure, synthetic benchmarks, and antigen-discovery software</p>
     </header>
 
-    <h2>Candidate antigen discovery</h2>
-
     <p>
-      For preclinical tumor profiling and target validation, IGI sources candidate antigens from the union of four software stacks across <a href="https://pirl.unc.edu/code/">PIRL</a>, <a href="https://openvax.org/">OpenVax</a>, and the broader immunogenomics community:
+      All IGI software, benchmark generators, and pipeline configurations are open source. Active IGI infrastructure lives at <a href="https://github.com/igi-unc">github.com/igi-unc</a>, building on computational immunology toolkits developed at <a href="https://pirl.unc.edu/code/">PIRL</a> and <a href="https://openvax.org/">OpenVax</a>.
     </p>
-
-    <ul>
-      <li><a href="https://github.com/pirl-unc/nexus">Nexus</a> &amp; <a href="https://github.com/pirl-unc/exacto">Exacto</a>: PIRL tools for orchestrating Nextflow analyses and resolving expressed structural variants and mutant proteoforms from long-read DNA/RNA sequencing.</li>
-      <li><a href="https://uselens.io/">LENS</a>: PIRL’s tumor antigen pipeline curating tumor-specific MHC ligands across somatic mutations, fusions, splice variants, endogenous retroviruses, viral proteins, and cancer-testis antigens, run reproducibly via <a href="https://useraft.io/">RAFT</a>.</li>
-      <li><a href="https://openvax.org/">OpenVax &amp; OpenVax 2</a>: open-source Python libraries and vaccine design tools (<code>MHCflurry</code>, <code>Vaxrank</code>, <code>Isovar</code>, <code>Varcode</code>, <code>Topiary</code>, <code>mhctools</code>, <code>PyEnsembl</code>) originally created for personalized vaccine trials at Mount Sinai and maintained at UNC, where PIRL leads development of OpenVax 2.</li>
-      <li><a href="https://github.com/griffithlab/ImmunoNX_protocol">ImmunoNX</a>: standard clinical immunogenomics and pVACtools workflow developed at Washington University.</li>
-    </ul>
 
     <h2>IGI repositories (<a href="https://github.com/igi-unc">@igi-unc</a>)</h2>
 
@@ -75,6 +65,19 @@
       <li><a href="https://github.com/igi-unc/igi-syn-seq">igi-syn-seq</a>: generator and truth specifications for <code>IGI-SYN-SEQ-01</code> and <code>IGI-SYN-SEQ-02</code>, synthetic 15-assay tumor/normal datasets (Illumina, PacBio HiFi/Kinnex, ONT, 10x GEX/TCR) for benchmarking antigen callers across every variant class.</li>
       <li><a href="https://github.com/igi-unc/igi-lims">igi-lims</a>: chain-of-custody LIMS tracking specimen and tube lineage from tissue collection through cellular fractions, DNA/RNA extracts, peptide eluates, QC imports, and sequencing files.</li>
       <li><a href="https://github.com/igi-unc/igi-data-librarian">igi-data-librarian</a>: sequencing registry and automated <a href="https://useraft.io/">RAFT</a> / Nextflow quality-control runner.</li>
+    </ul>
+
+    <h2>Candidate antigen discovery</h2>
+
+    <p>
+      To nominate candidate targets for our <a href="/data/">tumor-profiling dataset</a>, we take the union of predictions across four open-source stacks:
+    </p>
+
+    <ul>
+      <li><a href="https://github.com/pirl-unc/nexus">Nexus</a> &amp; <a href="https://github.com/pirl-unc/exacto">Exacto</a>: PIRL tools for Nextflow orchestration and resolving expressed structural variants and mutant proteoforms from long-read DNA and RNA sequencing.</li>
+      <li><a href="https://uselens.io/">LENS</a>: PIRL’s workflow for curating tumor-specific MHC ligands across somatic mutations, fusions, splice variants, endogenous retroviruses, viral proteins, and cancer-testis antigens, run via <a href="https://useraft.io/">RAFT</a>.</li>
+      <li><a href="https://openvax.org/">OpenVax &amp; OpenVax 2</a>: Python libraries and vaccine-design tools (<code>MHCflurry</code>, <code>Vaxrank</code>, <code>Isovar</code>, <code>Varcode</code>, <code>Topiary</code>, <code>mhctools</code>, <code>PyEnsembl</code>) originally created for personalized vaccine trials at Mount Sinai and maintained at UNC, where PIRL leads development of OpenVax 2.</li>
+      <li><a href="https://github.com/griffithlab/ImmunoNX_protocol">ImmunoNX</a>: Washington University’s clinical immunogenomics and pVACtools workflow.</li>
     </ul>
   </main>
 </div>

@@ -11,7 +11,6 @@ Plain static HTML and CSS with `.nojekyll` (no local build step required):
 - `trial/index.html` (`/trial/`) — Head-to-head vaccine trial & open regulatory filings
 - `code/index.html` (`/code/`) — Candidate-antigen software union (`Nexus`/`Exacto`, `LENS`, `OpenVax 2`, `ImmunoNX`) & `@igi-unc` repositories
 - `people/index.html` (`/people/`) — Leadership, PIRL overlap & specimen/clinical partners
-- `projects/index.html` (`/projects/`) — Exploratory & supporting projects
 - `assets/site.css`, `assets/favicon.svg` — Shared stylesheet & icon
 
 ## Blog sync (`pirlblog.substack.com` → IGI feed)
