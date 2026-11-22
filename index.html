@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Initiative for Generative Immunotherapy (IGI) — UNC Chapel Hill</title>
+<meta name="description" content="The Initiative for Generative Immunotherapy (IGI) at UNC Chapel Hill generates open multimodal tumor and T-cell datasets, clinical trials, and machine learning models for personalized cancer vaccines.">
+<link rel="canonical" href="https://igi-unc.github.io/">
+<meta property="og:site_name" content="Initiative for Generative Immunotherapy">
+<meta property="og:title" content="Initiative for Generative Immunotherapy (IGI) — UNC Chapel Hill">
+<meta property="og:description" content="Open multimodal tumor and T-cell datasets, comparative vaccine trials, and generative models for personalized cancer immunotherapy at UNC Lineberger.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://igi-unc.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f2238'/%3E%3Cpath d='M7 21V11M25 21V11' stroke='%237ab8eb' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M7 16h18' stroke='%234b9cd3' stroke-width='1.8' stroke-dasharray='2.5 2.5'/%3E%3Ccircle cx='16' cy='16' r='4.2' fill='%23d95d39'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="IGI home">
+      <svg viewBox="0 0 28 20" aria-hidden="true">
+        <path d="M4 16V4M24 16V4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M4 10h20" stroke="#4b9cd3" stroke-width="1.8" stroke-dasharray="2.2 2.2"/>
+        <circle cx="14" cy="10" r="3.8" fill="#d95d39"/>
+      </svg>
+      <span>IGI <span class="brand-sub">UNC</span></span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#approach">Approach</a>
+      <a href="#software">Code &amp; Benchmarks</a>
+      <a class="optional" href="#people">People</a>
+      <a class="optional" href="#updates">Updates</a>
+      <a class="gh" href="https://github.com/igi-unc" aria-label="IGI on GitHub">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero wrap">
+  <div class="hero-title">
+    <p class="eyebrow">UNC Lineberger Comprehensive Cancer Center</p>
+    <h1>Initiative for Generative Immunotherapy</h1>
+  </div>
+  <div class="hero-copy">
+    <p class="lede">We generate open, multimodal datasets from human tumors and the T cells that recognize them—pairing short- and long-read sequencing, single-cell profiling, MHC immunopeptidomics, and clinical vaccine trials so computational models can learn which tumor targets provoke an effective immune response.</p>
+    <p class="note">Launched in 2026 at the <a href="https://www.med.unc.edu/">UNC School of Medicine</a> with a $40M grant from the OpenAI Foundation’s <em>Public Data for Health</em> program (<a href="https://pirlblog.substack.com/p/openai-foundation-gave-us-40m-to">announcement</a>), in close collaboration with the <a href="https://pirl.unc.edu/">Personalized Immunotherapy Research Lab (PIRL)</a>.</p>
+  </div>
+
+  <figure class="loop" aria-label="IGI data-to-trial loop: paired tumor and immune specimens measured across genome, transcriptome, MHC immunopeptidome, and functional T-cell assays feed open datasets, predictive models, and clinical vaccine trials">
+    <ol class="stages">
+      <li>
+        <span class="stage-num">01</span>
+        <span class="stage-name">Paired specimens</span>
+        <span class="stage-detail">Tumor, matched normal, TIL &amp; peripheral blood</span>
+      </li>
+      <li>
+        <span class="stage-num">02</span>
+        <span class="stage-name">DNA &amp; full-length RNA</span>
+        <span class="stage-detail">Illumina, PacBio HiFi/Kinnex, ONT &amp; 10x GEX/VDJ</span>
+      </li>
+      <li class="highlight">
+        <span class="stage-num">03</span>
+        <span class="stage-name">Presented peptides</span>
+        <span class="stage-detail">HLA class I &amp; II mass-spec immunopeptidomics</span>
+      </li>
+      <li class="highlight">
+        <span class="stage-num">04</span>
+        <span class="stage-name">T-cell recognition</span>
+        <span class="stage-detail">TCR reactivity &amp; comparative vaccine trials</span>
+      </li>
+      <li>
+        <span class="stage-num">05</span>
+        <span class="stage-name">Open data &amp; models</span>
+        <span class="stage-detail">Public benchmarks &amp; generative antigen design</span>
+      </li>
+    </ol>
+  </figure>
+</section>
+
+<section class="block" id="approach">
+  <div class="wrap">
+    <h2>Approach</h2>
+    <div class="body">
+      <div class="prose">
+        <p>Personalized cancer vaccines direct a patient’s immune system against somatic mutations and other tumor-specific abnormalities. Despite encouraging clinical signals, vaccine target selection still relies heavily on calling variants from tumor DNA and RNA and inferring which peptides reach the cell surface and engage T cells.</p>
+        <p>Closing the gap between predicted candidates and true immunogenic targets requires paired measurements on the same specimens—observing the tumor genome, full-length transcript isoforms, MHC-eluted surface peptides, and functional T-cell responses together rather than in disconnected cohorts.</p>
+      </div>
+
+      <div class="pillars">
+        <article class="pillar">
+          <h3>Open tumor–immune datasets</h3>
+          <p>Deep multimodal profiling across hundreds of tumors, coupling short- and long-read DNA/RNA sequencing and single-cell TCR/expression data with direct mass-spectrometry measurements of HLA-presented peptides, released for the broader research community.</p>
+        </article>
+        <article class="pillar">
+          <h3>Comparative vaccine trials</h3>
+          <p>Clinical studies testing therapeutic cancer vaccine platforms and dosing strategies head-to-head—including in triple-negative breast cancer—with standardized longitudinal measurements of T-cell expansion and specificity.</p>
+        </article>
+        <article class="pillar">
+          <h3>Benchmarks &amp; generative models</h3>
+          <p>Known-truth synthetic multi-assay benchmarks and machine learning models trained on paired presentation and reactivity data to select neoantigens, splice variants, fusions, endogenous retroelements, and other non-canonical targets.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="software">
+  <div class="wrap">
+    <h2>Code &amp; Benchmarks</h2>
+    <div class="body">
+      <p class="prose">Active IGI engineering, data infrastructure, and benchmark generation live in the <a href="https://github.com/igi-unc"><code>igi-unc</code></a> GitHub organization alongside our open-source antigen discovery ecosystems.</p>
+
+      <h3>IGI repositories</h3>
+      <div class="pkgs">
+        <article class="pkg" id="igi-syn-seq">
+          <h4><a href="https://github.com/igi-unc/igi-syn-seq">igi-syn-seq</a></h4>
+          <p>Generator and specification for <code>IGI-SYN-SEQ-01</code> and <code>IGI-SYN-SEQ-02</code>: synthetic, known-truth tumor/normal datasets spanning 15 sample types (Illumina WES, WGS, bulk RNA, 10x 5′ GEX and TCR; PacBio HiFi and Kinnex; Oxford Nanopore WGS and RNA) to benchmark antigen callers across SNVs, indels, structural variants, fusions, splice isoforms, ERVs, CTAs, and viral integrations.</p>
+          <p class="links"><a href="https://github.com/igi-unc/igi-syn-seq">Source &amp; design docs</a></p>
+        </article>
+
+        <article class="pkg" id="igi-lims">
+          <h4><a href="https://github.com/igi-unc/igi-lims">igi-lims</a></h4>
+          <p>Chain-of-custody specimen database and web interface for IGI biospecimens. Tracks parent-to-child lineage from primary collections through cellular fractions, pellets, DNA/RNA extracts, and MHC peptide eluates to instrument QC imports and sequencing files.</p>
+          <p class="links"><a href="https://github.com/igi-unc/igi-lims">Source</a></p>
+        </article>
+
+        <article class="pkg wide" id="igi-data-librarian">
+          <h4><a href="https://github.com/igi-unc/igi-data-librarian">igi-data-librarian</a></h4>
+          <p>Sequencing registry and Slack workflow automation for dataset accessioning, LIMS tube verification, and automated quality-control runs via <a href="https://github.com/pirl-unc/raft">RAFT</a> and Nextflow.</p>
+          <p class="links"><a href="https://github.com/igi-unc/igi-data-librarian">Source</a></p>
+        </article>
+      </div>
+
+      <h3>Companion ecosystems</h3>
+      <div class="pkgs">
+        <article class="pkg">
+          <h4><a href="https://pirl.unc.edu/code/">PIRL Software</a></h4>
+          <p>Home of <a href="https://github.com/pirl-unc/lens">LENS</a> (Landscape of Effective Neoantigens Software), <a href="https://github.com/pirl-unc/raft">RAFT</a> (reproducible Nextflow workflow manager), and <a href="https://github.com/pirl-unc/mhcgnomes">mhcgnomes</a>, developed by the Personalized Immunotherapy Research Lab at UNC.</p>
+          <p class="links"><a href="https://pirl.unc.edu/code/">Overview</a><a href="https://github.com/pirl-unc">GitHub (@pirl-unc)</a></p>
+        </article>
+
+        <article class="pkg">
+          <h4><a href="https://www.openvax.org/">OpenVax</a></h4>
+          <p>Open-source Python libraries for neoantigen discovery, MHC presentation modeling, and vaccine peptide selection, including <a href="https://github.com/openvax/mhcflurry">MHCflurry</a>, <a href="https://github.com/openvax/vaxrank">Vaxrank</a>, <a href="https://github.com/openvax/isovar">Isovar</a>, <a href="https://github.com/openvax/varcode">Varcode</a>, and <a href="https://github.com/openvax/topiary">Topiary</a>.</p>
+          <p class="links"><a href="https://www.openvax.org/">Website</a><a href="https://github.com/openvax">GitHub (@openvax)</a></p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="people">
+  <div class="wrap">
+    <h2>People</h2>
+    <div class="body">
+      <div class="people">
+        <div class="person">
+          <h4><a href="https://unclineberger.org/directory/benjamin-vincent/">Benjamin Vincent, MD</a></h4>
+          <p>Principal Investigator. Physician-scientist and immunologist in Hematology/Oncology at the <a href="https://www.med.unc.edu/">UNC School of Medicine</a> and member of the <a href="https://unclineberger.org/">UNC Lineberger Comprehensive Cancer Center</a>. Co-leads <a href="https://pirl.unc.edu/">PIRL</a>.</p>
+        </div>
+        <div class="person">
+          <h4><a href="https://unclineberger.org/directory/alex-rubinsteyn/">Alex Rubinsteyn, PhD</a></h4>
+          <p>Principal Investigator. Faculty in <a href="https://www.med.unc.edu/genetics/">Genetics</a> and <a href="https://www.med.unc.edu/compmed/">Computational Medicine</a> at UNC Chapel Hill and member of <a href="https://unclineberger.org/">UNC Lineberger</a>. Co-leads <a href="https://pirl.unc.edu/">PIRL</a> and maintains <a href="https://www.openvax.org/">OpenVax</a>.</p>
+        </div>
+      </div>
+      <p class="muted team-note">IGI works closely with bioinformatics scientists, immunologists, clinical investigators, and research staff across <a href="https://pirl.unc.edu/people/">PIRL</a> and UNC Lineberger.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="updates">
+  <div class="wrap">
+    <h2>Updates</h2>
+    <div class="body">
+      <ul class="updates">
+        <li>
+          <time datetime="2026-09-15">Sep 15, 2026</time>
+          <div>
+            <h4><a href="https://pirlblog.substack.com/p/openai-foundation-gave-us-40m-to">OpenAI Foundation gave us $40M to improve cancer vaccines</a></h4>
+            <p>Launching the Initiative for Generative Immunotherapy at UNC to release rich multimodal datasets from tumors and the T cells that recognize them, alongside clinical trials comparing vaccine platforms.</p>
+          </div>
+        </li>
+      </ul>
+      <p class="muted team-note">Research notes, software releases, and preprints are shared on the <a href="https://pirlblog.substack.com/">PIRL Blog</a>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h5>Initiative for Generative Immunotherapy</h5>
+      <p>UNC Lineberger Comprehensive Cancer Center &amp; UNC School of Medicine, Chapel Hill, NC. Open-source software and specifications are available on <a href="https://github.com/igi-unc">GitHub</a>.</p>
+    </div>
+    <div>
+      <h5>Code</h5>
+      <ul>
+        <li><a href="https://github.com/igi-unc">IGI on GitHub</a></li>
+        <li><a href="https://github.com/pirl-unc">PIRL on GitHub</a></li>
+        <li><a href="https://github.com/openvax">OpenVax on GitHub</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>UNC &amp; Lab</h5>
+      <ul>
+        <li><a href="https://pirl.unc.edu/">PIRL (pirl.unc.edu)</a></li>
+        <li><a href="https://pirl.unc.edu/contact/">Contact</a></li>
+        <li><a href="https://unclineberger.org/">UNC Lineberger</a></li>
+        <li><a href="https://pirlblog.substack.com/">Lab Blog (Substack)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
