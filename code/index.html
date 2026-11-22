@@ -55,17 +55,17 @@
       <p class="sub">Antigen selection, synthetic benchmarks, and lab infrastructure</p>
     </header>
 
-    <h2>Antigen selection &amp; vaccine design</h2>
+    <h2>Candidate antigen discovery</h2>
 
     <p>
-      IGI’s computational antigen-selection stack combines tools developed at <a href="https://pirl.unc.edu/code/">PIRL</a> and <a href="https://openvax.org/">OpenVax</a> alongside standard community workflows:
+      For preclinical tumor profiling and target validation, IGI sources candidate antigens from the union of four software stacks across <a href="https://pirl.unc.edu/code/">PIRL</a>, <a href="https://openvax.org/">OpenVax</a>, and the broader immunogenomics community:
     </p>
 
     <ul>
+      <li><a href="https://github.com/pirl-unc/nexus">Nexus</a> &amp; <a href="https://github.com/pirl-unc/exacto">Exacto</a>: PIRL tools for orchestrating Nextflow analyses and resolving expressed structural variants and mutant proteoforms from long-read DNA/RNA sequencing.</li>
       <li><a href="https://uselens.io/">LENS</a>: PIRL’s tumor antigen pipeline curating tumor-specific MHC ligands across somatic mutations, fusions, splice variants, endogenous retroviruses, viral proteins, and cancer-testis antigens, run reproducibly via <a href="https://useraft.io/">RAFT</a>.</li>
       <li><a href="https://openvax.org/">OpenVax &amp; OpenVax 2</a>: open-source Python libraries and vaccine design tools (<code>MHCflurry</code>, <code>Vaxrank</code>, <code>Isovar</code>, <code>Varcode</code>, <code>Topiary</code>, <code>mhctools</code>, <code>PyEnsembl</code>) originally created for personalized vaccine trials at Mount Sinai and maintained at UNC, where PIRL leads development of OpenVax 2.</li>
-      <li><a href="https://github.com/pirl-unc/exacto">Exacto</a> &amp; <a href="https://github.com/pirl-unc/nexus">Nexus</a>: PIRL tools for resolving expressed structural variants and mutant proteoforms from long-read DNA/RNA sequencing and orchestrating Nextflow analyses.</li>
-      <li><a href="https://github.com/griffithlab/ImmunoNX_protocol">ImmunoNX</a>: standard clinical immunogenomics and pVACtools workflow used alongside our pipelines for comparison and target selection.</li>
+      <li><a href="https://github.com/griffithlab/ImmunoNX_protocol">ImmunoNX</a>: standard clinical immunogenomics and pVACtools workflow developed at Washington University.</li>
     </ul>
 
     <h2>IGI repositories (<a href="https://github.com/igi-unc">@igi-unc</a>)</h2>
