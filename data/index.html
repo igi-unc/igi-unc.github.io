@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Data · IGI at UNC</title>
+<meta name="description" content="Open tumor immunopeptidomics, somatic variant/isoform data, pMHC:TCR specificities, and public trial records from IGI at UNC.">
+<link rel="canonical" href="https://igi-unc.github.io/data/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="logo-cell" href="/">
+      <svg viewBox="0 0 132 54" aria-label="IGI">
+        <defs>
+          <mask id="scan-cut">
+            <rect width="140" height="56" fill="#fff"/>
+            <rect x="0" y="24" width="140" height="2" fill="#000"/>
+            <rect x="0" y="30" width="140" height="2.4" fill="#000"/>
+            <rect x="0" y="36.5" width="140" height="3" fill="#000"/>
+          </mask>
+        </defs>
+        <g transform="translate(10,0) skewX(-12)" mask="url(#scan-cut)">
+          <rect x="4" y="4" width="14" height="38" fill="currentColor"/>
+          <path d="M 30 4 H 80 V 15 H 44 V 31 H 66 V 24 H 55 V 18 H 80 V 42 H 30 Z" fill="currentColor"/>
+          <rect x="92" y="4" width="14" height="38" fill="currentColor"/>
+        </g>
+        <rect x="5" y="47" width="24" height="4" fill="var(--signal)"/>
+        <rect x="33" y="47" width="76" height="4" fill="var(--cyan)"/>
+      </svg>
+      <span class="logo-sub">UNC · CHAPEL HILL</span>
+    </a>
+
+    <nav class="panelmenu" aria-label="Site">
+      <a href="/">Overview</a>
+      <a href="/data/" aria-current="page">Open Data</a>
+      <a href="/trial/">Trial</a>
+      <a href="/code/">Code</a>
+      <a href="/people/">People</a>
+      <a class="ext-first" href="https://github.com/igi-unc">GitHub</a>
+      <a href="https://pirl.unc.edu/">PIRL</a>
+      <a href="https://openvax.org/">OpenVax</a>
+    </nav>
+  </aside>
+
+  <main>
+    <header class="pagehead">
+      <h1>Open Data</h1>
+      <p class="sub">Tumor antigen presentation, TCR specificity, and public archives</p>
+    </header>
+
+    <p>
+      Everything IGI generates is released publicly without restriction, with one exception: germline genetic information (DNA and germline-carrying sequencing reads from patient normal or tumor samples), which is deposited in controlled-access archives (dbGaP and SRA) to protect patient privacy.
+    </p>
+
+    <h2>Tumor &amp; T-cell profiling</h2>
+
+    <p>
+      Most predicted neoantigens never appear at meaningful abundance on tumor cells. Working closely with UNC’s Screening Live Cancer Explants (SLiCE) core for viable surgical tumor tissue alongside clinical biobanks across a wide range of solid and hematologic cancers, each specimen cohort combines:
+    </p>
+
+    <ul>
+      <li><strong>Long-read DNA &amp; single-cell RNA/TCR sequencing:</strong> tumor/normal whole-genome sequencing and full-length single-cell transcriptomes + paired αβ TCRs spanning point mutations, indels, structural variants, fusions, splice isoforms, and cancer-testis antigens.</li>
+      <li><strong>Mass-spectrometry immunopeptidomics:</strong> targeted heavy-isotope standards, inclusion-list DDA, and personalized-proteome DIA to measure which candidate peptide-MHC complexes are actually presented on tumor cells.</li>
+      <li><strong>High-throughput pMHC:TCR screening:</strong> functional deorphanization of tumor-specific TCRs from tumor-infiltrating lymphocytes (TILs) and tumor-associated T cells.</li>
+    </ul>
+
+    <h2>Data release policy</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Data type</th>
+            <th scope="col">Archive</th>
+            <th scope="col">Access</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Immunopeptidomics spectra &amp; validated pMHCs</td>
+            <td>PRIDE, IEDB, GitHub</td>
+            <td><strong>Open</strong></td>
+          </tr>
+          <tr>
+            <td>Deorphanized pMHC:TCR pairs, TCR repertoires &amp; <em>ex vivo</em> T-cell readouts</td>
+            <td>VDJdb, AIRR, GitHub</td>
+            <td><strong>Open</strong></td>
+          </tr>
+          <tr>
+            <td>Somatic variants, tumor-specific transcript/protein sequences &amp; expression matrices</td>
+            <td>GEO, GitHub</td>
+            <td><strong>Open</strong></td>
+          </tr>
+          <tr>
+            <td>Clinical protocols, IND &amp; CMC packages, SOPs &amp; regulatory filings</td>
+            <td>GitHub</td>
+            <td><strong>Open</strong></td>
+          </tr>
+          <tr class="controlled">
+            <td>Germline genotypes &amp; raw DNA/RNA reads carrying germline information (patient or tumor)</td>
+            <td>dbGaP, SRA</td>
+            <td>Controlled</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+</body>
+</html>

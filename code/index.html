@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code · IGI at UNC</title>
+<meta name="description" content="Open-source software for antigen selection, synthetic multi-assay benchmarks, and specimen LIMS across IGI, PIRL, and OpenVax.">
+<link rel="canonical" href="https://igi-unc.github.io/code/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="logo-cell" href="/">
+      <svg viewBox="0 0 132 54" aria-label="IGI">
+        <defs>
+          <mask id="scan-cut">
+            <rect width="140" height="56" fill="#fff"/>
+            <rect x="0" y="24" width="140" height="2" fill="#000"/>
+            <rect x="0" y="30" width="140" height="2.4" fill="#000"/>
+            <rect x="0" y="36.5" width="140" height="3" fill="#000"/>
+          </mask>
+        </defs>
+        <g transform="translate(10,0) skewX(-12)" mask="url(#scan-cut)">
+          <rect x="4" y="4" width="14" height="38" fill="currentColor"/>
+          <path d="M 30 4 H 80 V 15 H 44 V 31 H 66 V 24 H 55 V 18 H 80 V 42 H 30 Z" fill="currentColor"/>
+          <rect x="92" y="4" width="14" height="38" fill="currentColor"/>
+        </g>
+        <rect x="5" y="47" width="24" height="4" fill="var(--signal)"/>
+        <rect x="33" y="47" width="76" height="4" fill="var(--cyan)"/>
+      </svg>
+      <span class="logo-sub">UNC · CHAPEL HILL</span>
+    </a>
+
+    <nav class="panelmenu" aria-label="Site">
+      <a href="/">Overview</a>
+      <a href="/data/">Open Data</a>
+      <a href="/trial/">Trial</a>
+      <a href="/code/" aria-current="page">Code</a>
+      <a href="/people/">People</a>
+      <a class="ext-first" href="https://github.com/igi-unc">GitHub</a>
+      <a href="https://pirl.unc.edu/">PIRL</a>
+      <a href="https://openvax.org/">OpenVax</a>
+    </nav>
+  </aside>
+
+  <main>
+    <header class="pagehead">
+      <h1>Code</h1>
+      <p class="sub">Antigen selection, synthetic benchmarks, and lab infrastructure</p>
+    </header>
+
+    <h2>Antigen selection &amp; vaccine design</h2>
+
+    <p>
+      IGI’s computational antigen-selection stack combines tools developed at <a href="https://pirl.unc.edu/code/">PIRL</a> and <a href="https://openvax.org/">OpenVax</a> alongside standard community workflows:
+    </p>
+
+    <ul>
+      <li><a href="https://uselens.io/">LENS</a>: PIRL’s tumor antigen pipeline curating tumor-specific MHC ligands across somatic mutations, fusions, splice variants, endogenous retroviruses, viral proteins, and cancer-testis antigens, run reproducibly via <a href="https://useraft.io/">RAFT</a>.</li>
+      <li><a href="https://openvax.org/">OpenVax &amp; OpenVax 2</a>: open-source Python libraries and vaccine design tools (<code>MHCflurry</code>, <code>Vaxrank</code>, <code>Isovar</code>, <code>Varcode</code>, <code>Topiary</code>, <code>mhctools</code>, <code>PyEnsembl</code>) originally created for personalized vaccine trials at Mount Sinai and maintained at UNC, where PIRL leads development of OpenVax 2.</li>
+      <li><a href="https://github.com/pirl-unc/exacto">Exacto</a> &amp; <a href="https://github.com/pirl-unc/nexus">Nexus</a>: PIRL tools for resolving expressed structural variants and mutant proteoforms from long-read DNA/RNA sequencing and orchestrating Nextflow analyses.</li>
+      <li><a href="https://github.com/griffithlab/ImmunoNX_protocol">ImmunoNX</a>: standard clinical immunogenomics and pVACtools workflow used alongside our pipelines for comparison and target selection.</li>
+    </ul>
+
+    <h2>IGI repositories (<a href="https://github.com/igi-unc">@igi-unc</a>)</h2>
+
+    <ul>
+      <li><a href="https://github.com/igi-unc/igi-syn-seq">igi-syn-seq</a>: generator and truth specifications for <code>IGI-SYN-SEQ-01</code> and <code>IGI-SYN-SEQ-02</code>, synthetic 15-assay tumor/normal datasets (Illumina, PacBio HiFi/Kinnex, ONT, 10x GEX/TCR) for benchmarking antigen callers across every variant class.</li>
+      <li><a href="https://github.com/igi-unc/igi-lims">igi-lims</a>: chain-of-custody LIMS tracking specimen and tube lineage from tissue collection through cellular fractions, DNA/RNA extracts, peptide eluates, QC imports, and sequencing files.</li>
+      <li><a href="https://github.com/igi-unc/igi-data-librarian">igi-data-librarian</a>: sequencing registry and automated <a href="https://useraft.io/">RAFT</a> / Nextflow quality-control runner.</li>
+    </ul>
+  </main>
+</div>
+</body>
+</html>

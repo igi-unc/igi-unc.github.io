@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#111820"/>
+  <defs>
+    <mask id="s">
+      <rect width="64" height="64" fill="#fff"/>
+      <rect x="0" y="29" width="64" height="1.8" fill="#000"/>
+      <rect x="0" y="34.5" width="64" height="2.2" fill="#000"/>
+      <rect x="0" y="40.5" width="64" height="2.6" fill="#000"/>
+    </mask>
+  </defs>
+  <g transform="translate(8,10) skewX(-12)" mask="url(#s)" fill="#e8eef4">
+    <rect x="2" y="2" width="6.5" height="34"/>
+    <path d="M 14 2 H 37 V 10.5 H 20.5 V 27.5 H 30.5 V 22 H 25.5 V 16.5 H 37 V 36 H 14 Z"/>
+    <rect x="42.5" y="2" width="6.5" height="34"/>
+  </g>
+  <rect x="6" y="51" width="13" height="4" fill="#ef6b48"/>
+  <rect x="21" y="51" width="37" height="4" fill="#57a8e0"/>
+</svg>
