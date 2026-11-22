@@ -10,7 +10,8 @@ Plain static HTML and CSS with `.nojekyll` (no build step required):
 - `data/index.html` (`/data/`) — Open data policy & tumor/TCR profiling
 - `trial/index.html` (`/trial/`) — Head-to-head vaccine trial & open regulatory filings
 - `code/index.html` (`/code/`) — Antigen-selection stack (`LENS`, `OpenVax 2`, `Exacto`/`Nexus`, `ImmunoNX`) & `@igi-unc` repositories
-- `people/index.html` (`/people/`) — Leadership, UNC collaborators & contact
+- `people/index.html` (`/people/`) — Leadership, PIRL overlap & contact
+- `projects/index.html` (`/projects/`) — Exploratory & supporting projects
 - `assets/site.css`, `assets/favicon.svg` — Shared stylesheet & icon
 
 ## Local preview
