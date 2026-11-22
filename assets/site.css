@@ -240,6 +240,118 @@ tr.controlled td {
   background: var(--panel);
 }
 
+/* Prominent homepage blog feed */
+section.feed {
+  margin-top: 2.35rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid var(--rule);
+}
+
+.feed-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1.15rem;
+}
+
+.feed-head h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.feed-head h2 a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.feed-head h2 a:hover {
+  color: var(--signal);
+}
+
+.feed-links {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.feed-links a {
+  color: var(--muted);
+}
+
+.feed-links a:hover {
+  color: var(--fg);
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-card {
+  padding: 1rem 0;
+  border-top: 1px solid var(--rule-soft);
+}
+
+.post-card.has-cover {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 8.5rem;
+  gap: 1.15rem;
+  align-items: start;
+}
+
+.post-meta {
+  font-size: 0.76rem;
+  color: var(--muted);
+  margin-bottom: 0.28rem;
+}
+
+.post-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.38;
+}
+
+.post-card h3 a {
+  color: var(--fg);
+  text-decoration-color: var(--rule-soft);
+}
+
+.post-card h3 a:hover {
+  color: var(--signal);
+  text-decoration-color: currentColor;
+}
+
+.post-card p {
+  margin: 0;
+  font-size: 0.87rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.post-thumb {
+  display: block;
+  border: 1px solid var(--rule-soft);
+  background: var(--panel);
+}
+
+.post-thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.feed-empty {
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 @media (max-width: 46rem) {
   .layout {
     grid-template-columns: 1fr;
@@ -274,5 +386,8 @@ tr.controlled td {
   }
   nav.panelmenu a.ext-first {
     border-top: 0;
+  }
+  .post-card.has-cover {
+    grid-template-columns: 1fr;
   }
 }

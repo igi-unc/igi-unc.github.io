@@ -1,0 +1,20 @@
+{
+  "blog_url": "https://pirlblog.substack.com",
+  "subscribe_url": "https://pirlblog.substack.com/subscribe",
+  "rss_url": "https://pirlblog.substack.com/feed",
+  "section_feed_url": "https://pirlblog.substack.com/s/igi/feed",
+  "tag_page_url": "https://pirlblog.substack.com/t/igi",
+  "gcs_cache_url": "https://storage.googleapis.com/pirl-site-feed-galvanized-opus-161501/blog-cache.tar.gz",
+  "ignore_image_substrings": [
+    "8b44083d-390f-45ac-af2a-916e47031033"
+  ],
+  "match_patterns": [
+    "\\bIGI\\b",
+    "Initiative for Generative Immunotherapy"
+  ],
+  "include_urls": [
+    "https://pirlblog.substack.com/p/openai-foundation-gave-us-40m-to"
+  ],
+  "exclude_urls": [],
+  "max_posts": 6
+}
