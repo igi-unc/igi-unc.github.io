@@ -34,7 +34,7 @@
     </a>
     <nav aria-label="Primary">
       <a href="#program">Program</a>
-      <a href="#outputs">Outputs</a>
+      <a href="#data">Open Data</a>
       <a href="#code">Code</a>
       <a class="hide-sm" href="#people">People</a>
       <a href="https://github.com/igi-unc">GitHub</a>
@@ -46,10 +46,10 @@
       <p class="kicker">UNC LINEBERGER COMPREHENSIVE CANCER CENTER · CHAPEL HILL, NC</p>
       <h1>Initiative for Generative Immunotherapy</h1>
       <p class="lede">
-        Personalized cancer vaccines can fail for two different reasons: the predicted targets are not actually presented on the tumor, or the vaccine does not raise enough CD8<sup>+</sup> T cells against them. Past trials have tangled those questions together. IGI separates them—and makes the resulting datasets, trial readouts, and regulatory documents public.
+        Personalized cancer vaccines can fail for two different reasons: the predicted targets are not actually presented on the tumor, or the vaccine does not raise enough CD8<sup>+</sup> T cells against them. Past trials have tangled those questions together. IGI separates them—and releases everything we generate openly, except germline-identifying DNA from patients or tumors.
       </p>
       <p class="provenance">
-        Independent research unit at UNC Chapel Hill, launched in 2026 with a $40M grant from the OpenAI Foundation (<a href="https://pirlblog.substack.com/p/openai-foundation-gave-us-40m-to">announcement</a>) alongside <a href="https://pirl.unc.edu/">PIRL</a>.
+        Independent research unit at UNC Chapel Hill, launched in 2026 with support from the OpenAI Foundation (<a href="https://pirlblog.substack.com/p/openai-foundation-gave-us-40m-to">announcement</a>) alongside <a href="https://pirl.unc.edu/">PIRL</a>.
       </p>
 
       <figure class="schematic" aria-label="Two decoupled tracks: ground-truth tumor target discovery and head-to-head vaccine platform trials">
@@ -161,15 +161,15 @@
       </div>
     </section>
 
-    <section class="section" id="outputs">
+    <section class="section" id="data">
       <div class="sec-bar">
         <span class="sec-num">02</span>
-        <h2>Public outputs</h2>
+        <h2>Open data</h2>
         <span class="sec-line" aria-hidden="true"></span>
       </div>
 
       <p class="section-intro">
-        Non-identifying molecular data, validated targets, TCR specificities, and regulatory filings are released openly; raw patient reads and germline variants go to standard controlled-access archives.
+        <strong>Open by default.</strong> Everything we generate—immunopeptidomics spectra, validated pMHCs, somatic target and isoform calls, gene-expression matrices, TCR repertoires, deorphanized pMHC:TCR pairs, immune readouts, and clinical trial filings—is released publicly without restriction. Only germline-identifying genetic information (DNA from patient or tumor samples) is held in controlled-access archives.
       </p>
 
       <div class="table-wrap">
@@ -178,29 +178,34 @@
             <tr>
               <th scope="col">Artifact</th>
               <th scope="col">Contents</th>
-              <th scope="col">Destination</th>
+              <th scope="col">Access &amp; Archive</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><code>pMHC presentation</code></td>
-              <td>Quantitative MS immunopeptidomics (isotopologue-labeled, targeted DDA, and personalized DIA) across diverse tumors</td>
-              <td>PRIDE · IEDB · GitHub</td>
+              <td>Quantitative MS immunopeptidomics spectra &amp; validated targets across diverse tumors</td>
+              <td><span class="access-open">OPEN</span> · PRIDE · IEDB · GitHub</td>
             </tr>
             <tr>
-              <td><code>TCR : pMHC pairs</code></td>
-              <td>Deorphanized TIL, tumor-associated, and vaccine-elicited TCR specificities plus repertoire time series</td>
-              <td>VDJdb · AIRR · GitHub</td>
+              <td><code>TCRs &amp; T-cell readouts</code></td>
+              <td>Deorphanized TIL &amp; vaccine-elicited pMHC:TCR pairs, TCR repertoires, direct <em>ex vivo</em> CD8<sup>+</sup> assays</td>
+              <td><span class="access-open">OPEN</span> · VDJdb · AIRR · GitHub</td>
             </tr>
             <tr>
-              <td><code>Genomes &amp; isoforms</code></td>
-              <td>Long-read tumor/normal WGS, single-cell full-length RNA-seq, somatic variant &amp; antigen calls</td>
-              <td>SRA · dbGaP · GEO</td>
+              <td><code>Somatic targets &amp; RNA</code></td>
+              <td>Somatic variants, tumor-specific protein/isoform sequences, antigen predictions &amp; expression matrices</td>
+              <td><span class="access-open">OPEN</span> · GEO · GitHub</td>
             </tr>
             <tr>
               <td><code>Trial paperwork</code></td>
-              <td>Clinical protocols, IND &amp; CMC modules, SOPs, and regulatory filings</td>
-              <td>GitHub (open)</td>
+              <td>Clinical protocols, IND &amp; CMC packages, SOPs, and regulatory correspondence</td>
+              <td><span class="access-open">OPEN</span> · GitHub</td>
+            </tr>
+            <tr class="controlled-row">
+              <td><code>Patient &amp; tumor DNA</code></td>
+              <td>Germline genetic information and raw DNA/RNA reads carrying germline genotypes</td>
+              <td><span class="access-ctrl">CONTROLLED</span> · dbGaP · SRA</td>
             </tr>
           </tbody>
         </table>
